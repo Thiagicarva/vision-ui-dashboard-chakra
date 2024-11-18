@@ -1,10 +1,12 @@
-name: vision-ui-dashboard-chakra
-region: us-east-1
-yamlVersion: 2
 frontend:
-    path: .
+    path: ./
     publish: build
     scripts:
-        deploy:
-            - npm install --legacy-peer-deps
+        build:
             - npm run build
+        deploy:
+            - npm install
+    subdomain: insights-Dep-Vaz
+name: insights-Dep-Vaz
+region: us-east-1
+yamlVersion: 2
